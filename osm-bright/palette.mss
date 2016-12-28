@@ -36,15 +36,24 @@ Map { font-directory: url(./fonts); }
 /* ================================================================== */
 /* COLOR PALETTE
 /* ================================================================== */
-@grey1: #595959;
+
 @black: #000000; 
 @white: #ffffff;
-@grey2: #8F8F8F;
-@grey3: #D6D6D6;
+
+@grey-light: #cccccc;
+@grey-medium: #999999;
+@grey-strong:  #333333;
+
 @orange: #FF6600;
-@blue: #4BB4E6;
-@yellow: #FFDC00;
-@green: #50BE87;
+
+@blue: #0000ff;
+
+@yellow:  #ffff33;
+@yellow-light: #ffff99;
+
+@green: #006600;
+@green-light: ##99ff99;
+
 @purple: #9164CD;
 @pink: #FFB4E6;
 
@@ -52,24 +61,24 @@ Map { font-directory: url(./fonts); }
 /* LANDUSE & LANDCOVER COLORS
 /* ================================================================== */
 
-@land:              @white;
+@land:              @green-light;
 @water:             @blue;
 @grass:             @green;
 @beach:             @yellow;
 @park:              @green;
-@cemetery:          @white;
+@cemetery:          @green-light;
 @wooded:            @green;
-@agriculture:       @white;
+@agriculture:      @green-light;
 
-@building:          @orange;
-@hospital:          @white;
-@school:            @white;
-@sports:            @green;
+@building:          @grey-strong;
+@hospital:          @green-light;
+@school:            @green-light;
+@sports:            @green-light;
 
-@residential:       @white;
-@commercial:        @white;
-@industrial:        @white;
-@parking:           @white;
+@residential:       @green-light;
+@commercial:        @@green-light;
+@industrial:        @green-light;
+@parking:          @green-light;
 
 /* ================================================================== */
 /* ROAD COLORS
@@ -84,31 +93,31 @@ Map { font-directory: url(./fonts); }
  *         inner fill (inline).
  */
 
-@motorway_line:     @black;
+@motorway_line:     @white;
 @motorway_fill:     lighten(@motorway_line,80%);
 @motorway_case:     @motorway_line * 0.8;
 
-@trunk_line:        @black;
+@trunk_line:        @white;
 @trunk_fill:        lighten(@trunk_line,70%);
 @trunk_case:        @trunk_line * 0.7;
 
-@primary_line:      @black;
+@primary_line:      @white;
 @primary_fill:      lighten(@primary_line,60%);
 @primary_case:      @primary_line * 0.6;
 
-@secondary_line:    @black;
+@secondary_line:    @white;
 @secondary_fill:    lighten(@secondary_line,50%);
 @secondary_case:    @secondary_line * 0.5;
 
-@standard_line:     @black;
+@standard_line:     @white;
 @standard_fill:     @white;
 @standard_case:     @black;
 
-@pedestrian_line:   @black;
+@pedestrian_line:   @purple;
 @pedestrian_fill:   @white;
 @pedestrian_case:   @black;
 
-@cycle_line:        @black;
+@cycle_line:        @purple;
 @cycle_fill:        @white;
 @cycle_case:        @black;
 
